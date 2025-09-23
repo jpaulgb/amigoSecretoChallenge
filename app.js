@@ -3,13 +3,15 @@ let amigos = [];
 console.log(amigos);
 
 function agregarAmigo() {
-    let nuevoAmigo = document.getElementById(amigo);
+    let nuevoAmigo = document.getElementById('amigo').value;
     console.log(nuevoAmigo)
 
-    if ( nuevoAmigo === null) {
-    alert('El campo esta vacio introduzca un nombre para iniciar');
-    }
+    if ( nuevoAmigo === "") {
+    alert('Por favor, inserte un nombre.');
+    } // amigos.push()
 };
+
+//document.getElementById('amigo') = amigo.innerHTML = "";
 
 let nombre = document.getElementById('listaAmigos')
 nombre.innerHTML = "Nombre agregado manualmente TEMPORAL"
