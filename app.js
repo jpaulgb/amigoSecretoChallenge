@@ -8,7 +8,8 @@ function agregarAmigo() {
 
     if ( nuevoAmigo === "") {
     alert('Por favor, inserte un nombre.');
-    } // amigos.push()
+    } amigos.push(nuevoAmigo)
+    console.log(amigos)
 };
 
 //document.getElementById('amigo') = amigo.innerHTML = "";
