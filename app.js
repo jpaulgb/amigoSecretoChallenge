@@ -10,9 +10,14 @@ function agregarAmigo() {
     alert('Por favor, inserte un nombre.');
     } amigos.push(nuevoAmigo)
     console.log(amigos)
+    // Limpiar input
+    limpiarCaja()
 };
 
-//document.getElementById('amigo') = amigo.innerHTML = "";
+function limpiarCaja() {
+    let valorCaja = document.querySelector('#amigo');
+    valorCaja.value = '';
+}
 
 let nombre = document.getElementById('listaAmigos')
 nombre.innerHTML = "Nombre agregado manualmente TEMPORAL"
@@ -21,5 +26,5 @@ nombre.innerHTML = "Nombre agregado manualmente TEMPORAL"
 /* let resultado = document.getElementById('resultado')
 nombre.innerHTML = "El ganador es: nombre agregado manualmente TEMPORAL" */
 
-//validación de que el campo no esta vacio
+
 
