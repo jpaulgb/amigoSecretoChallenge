@@ -43,9 +43,17 @@ function sortearAmigo(){
     }   
 }
 
+//Obtener nombre sorteado
 //let numeroSecreto = generarNumeroSecreto();
-//Generar un índice aleatorio
+
+let dos = "2";
+
+let nombre = document.getElementById('resultado')
+nombre.innerHTML = `Su amigo secreto es: ${dos}`;
+
+
 function seleccionAleatoria(){
     console.log(Math.floor(Math.random()*amigos.length)+1);  
 }
+
 
