@@ -46,14 +46,11 @@ function sortearAmigo(){
 //Obtener nombre sorteado
 //let numeroSecreto = generarNumeroSecreto();
 
-let dos = "2";
-
-let nombre = document.getElementById('resultado')
-nombre.innerHTML = `Su amigo secreto es: ${dos}`;
-
-
 function seleccionAleatoria(){
-    console.log(Math.floor(Math.random()*amigos.length)+1);  
+    let numeroAleatorio = Math.floor(Math.random()*amigos.length)+1;  
+    
+    let nombre = document.getElementById('resultado');
+    nombre.innerHTML = `Su amigo secreto es: ${numeroAleatorio}`;
 }
 
 
