@@ -48,9 +48,10 @@ function sortearAmigo(){
 
 function seleccionAleatoria(){
     let numeroAleatorio = Math.floor(Math.random()*amigos.length)+1;  
-    
+
     let nombre = document.getElementById('resultado');
-    nombre.innerHTML = `Su amigo secreto es: ${numeroAleatorio}`;
+    nombre.innerHTML = `Su amigo secreto es: ${amigos[numeroAleatorio - 1]}`;
+    console.log(typeof(numeroAleatorio))
 }
 
 
