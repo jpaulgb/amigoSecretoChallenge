@@ -8,23 +8,31 @@ function agregarAmigo() {
 
     if ( nuevoAmigo === "") {
     alert('Por favor, inserte un nombre.');
-    } amigos.push(nuevoAmigo)
+    return
+    }
+    
+    amigos.push(nuevoAmigo)
     console.log(amigos)
     // Limpiar input
     limpiarCaja()
-};
+    recorreAmigos()
+}
 
 function limpiarCaja() {
     let valorCaja = document.querySelector('#amigo');
     valorCaja.value = '';
 }
 
-let nombre = document.getElementById('listaAmigos')
-nombre.innerHTML = "Nombre agregado manualmente TEMPORAL"
+function recorreAmigos() {
+    const lista = document.getElementById('listaAmigos');
+    lista.innerHTML = ""; 
 
-
-/* let resultado = document.getElementById('resultado')
-nombre.innerHTML = "El ganador es: nombre agregado manualmente TEMPORAL" */
-
+    for (let i = 0; i < amigos.length; i++) {
+        let amigo = amigos[i];
+        if (amigo !== "") {
+            lista.innerHTML += `<li>${amigo}</li>`;
+        }
+    }
+}
 
 
