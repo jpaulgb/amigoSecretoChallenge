@@ -43,8 +43,9 @@ function sortearAmigo(){
     }   
 }
 
+//let numeroSecreto = generarNumeroSecreto();
+//Generar un índice aleatorio
 function seleccionAleatoria(){
-    //return Math.floor(Math.random()*amigos.length)+1;
-    console.log('hola');  
+    console.log(Math.floor(Math.random()*amigos.length)+1);  
 }
-//verificarArray()
+
