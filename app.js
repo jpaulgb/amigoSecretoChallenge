@@ -35,4 +35,16 @@ function recorreAmigos() {
     }
 }
 
+function sortearAmigo(){
+    if (amigos.length === 0) {
+    alert('Incluya por lo menos un nombre');
+    } else {
+         seleccionAleatoria()
+    }   
+}
 
+function seleccionAleatoria(){
+    //return Math.floor(Math.random()*amigos.length)+1;
+    console.log('hola');  
+}
+//verificarArray()
